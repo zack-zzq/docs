@@ -1,0 +1,18 @@
+name: Daily Sync
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  daily-fork-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fork Sync
+        uses: zwping/fork-sync@v1.6.5
+        with:
+          owner: alist-org
+          token: ${{ secrets.GH_PERSONNAL_TOKEN }}
+          head: main
+          base: main
