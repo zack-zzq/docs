@@ -140,6 +140,7 @@ export default defineUserConfig({
     "@Wopan/Token": path.resolve(__dirname, "./components/wopan/Token.vue"),
     "@Pricing": path.resolve(__dirname, "./components/Pricing.vue"),
     "@Desktop": path.resolve(__dirname, "./components/Desktop.vue"),
+    "@BusinessModal": path.resolve(__dirname, "./components/BusinessModal.vue"),
     "@Changelog": path.resolve(__dirname, "./components/changelog/index.vue"),
     "@Api": path.resolve(__dirname, "./components/api/index.ts"),
     "@Dropbox/Request": path.resolve(
