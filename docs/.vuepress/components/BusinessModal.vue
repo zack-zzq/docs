@@ -138,9 +138,13 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch, onUnmounted } from 'vue'
+import { ref, watch, onUnmounted, onMounted } from 'vue'
 
-const visible = ref(true)
+const visible = ref(false)
+
+onMounted(() => {
+  visible.value = true
+})
 
 watch(visible, (newValue) => {
   if (typeof document === 'undefined') return
