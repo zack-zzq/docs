@@ -12,7 +12,7 @@ import { ref } from "vue"
 import { api } from "../api"
 
 const alist_redirect_uri = "https://alist.nn.ci/tool/aliyundrive/callback"
-const app_id = "76917ccccd4441c39457a04f6084fb2f"
+const app_id = "b8c990e60b18446eb07f5dca30398e8a"
 
 function goGet() {
   const url = new URL("https://open.aliyundrive.com/oauth/authorize")

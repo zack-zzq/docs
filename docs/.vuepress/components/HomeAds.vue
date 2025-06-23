@@ -14,12 +14,28 @@ const jumpUrl = computed(() =>
 )
 
 console.log('当前图片:', backgroundImage.value)
+
+const handleAdClick = async () => {
+  try {
+    await fetch('https://api.hutool.cn/blade-adv/stats', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name: "alist-vidhub"
+      })
+    });
+  } catch (error) {
+    console.error('广告统计请求失败:', error);
+  }
+};
 </script>
 
 <template>
   <div class="ads-container">
     <div class="vidhub-new-bgc">
-      <a :href="jumpUrl" target="_blank" rel="noopener">
+      <a :href="jumpUrl" target="_blank" rel="noopener" @click="handleAdClick">
         <img :src="backgroundImage" :alt="isChinese ? 'VidHub 背景' : 'VidHub Background'" />
       </a>
     </div>

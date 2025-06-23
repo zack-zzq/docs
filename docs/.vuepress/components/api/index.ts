@@ -1,7 +1,7 @@
 export const apis: Record<string, string> = {
-  cf: "https://api.nn.ci",
-  cn: "https://api.xhofe.top",
-  de: "http://api-my-api-5hw5ou-b810d8-80-75-218-107.traefik.me"
+  cf: "https://api.alistgo.com",
+  // cn: "https://api.xhofe.top",
+  // de: "http://api-my-api-5hw5ou-b810d8-80-75-218-107.traefik.me"
 };
 
 if (typeof location !== "undefined") {
