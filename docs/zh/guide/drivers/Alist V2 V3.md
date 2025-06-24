@@ -34,9 +34,9 @@ star: true
 ### **根文件夹ID**
 
 - 要添加的目录的pathname，不填默认为根目录，如：
-  - [https://alist.nn.ci](https://alist.nn.ci/) -> `/`
-  - https://alist.nn.ci/a -> `/a`
-  - https://alist.nn.ci/a/b -> `/a/b`
+  - [https://alistgo.com](https://alistgo.com/) -> `/`
+  - https://alistgo.com/a -> `/a`
+  - https://alistgo.com/a/b -> `/a/b`
 
 
 

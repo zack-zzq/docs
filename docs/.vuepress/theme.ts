@@ -7,7 +7,7 @@ export default hopeTheme(
     docsDir: "docs",
     logo: "/logo.svg",
     repo: "alist-org/docs",
-    hostname: "https://alist.nn.ci",
+    hostname: "https://alistgo.com",
     // 移动到 palette.scss 文件中
     // themeColor: {
     //   blue: "#2196f3",

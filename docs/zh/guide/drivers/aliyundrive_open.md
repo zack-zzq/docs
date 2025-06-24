@@ -105,7 +105,7 @@ typeof fetch !== "undefined" && getLimit()
 
 ## **刷新令牌**
 
-前往：**https://alist.nn.ci/zh/tool/aliyundrive/request**
+前往：**https://alistgo.com/zh/tool/aliyundrive/request**
 
 
 

@@ -34,9 +34,9 @@ First of all, you need to know whether the other party is V2 or V3.
 ### **root directory path**
 
 - The pathname of the directory to be added, if not filled, it defaults to the root directory, such as:
-   - [https://alist.nn.ci](https://alist.nn.ci/) -> `/`
-   - https://alist.nn.ci/a -> `/a`
-   - https://alist.nn.ci/a/b -> `/a/b`
+   - [https://alistgo.com](https://alistgo.com/) -> `/`
+   - https://alistgo.com/a -> `/a`
+   - https://alistgo.com/a/b -> `/a/b`
 
 
 

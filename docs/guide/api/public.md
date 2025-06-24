@@ -66,7 +66,7 @@ GET /api/public/settings
     "iframe_previews": "{\n\t\"doc,docx,xls,xlsx,ppt,pptx\": {\n\t\t\"Microsoft\":\"https://view.officeapps.live.com/op/view.aspx?src=$e_url\",\n\t\t\"Google\":\"https://docs.google.com/gview?url=$e_url&embedded=true\"\n\t},\n\t\"pdf\": {\n\t\t\"PDF.js\":\"https://alist-org.github.io/pdf.js/web/viewer.html?file=$e_url\"\n\t},\n\t\"epub\": {\n\t\t\"EPUB.js\":\"https://alist-org.github.io/static/epub.js/viewer.html?url=$e_url\"\n\t}\n}",
     "logo": "https://cdn.jsdelivr.net/gh/alist-org/logo@main/logo.svg",
     "main_color": "#1890ff",
-    "ocr_api": "https://api.nn.ci/ocr/file/json",
+    "ocr_api": "https://api.alistgo.com/ocr/file/json",
     "package_download": "true",
     "pagination_type": "all",
     "robots_txt": "User-agent: *\nAllow: /",

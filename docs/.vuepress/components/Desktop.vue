@@ -4,9 +4,18 @@ import { computed, ref } from "vue"
 // import { api } from "./api";
 
 const proxy = "https://ghfast.top/"
-const res = await fetch(`https://ad-api.nn.ci/v0/app/latest`)
-const data = await res.json()
-const version = data.version as string
+let version: string | undefined
+
+try {
+  const res = await fetch(`https://ad-api.nn.ci/v0/app/latest`)
+  if (res.ok) {
+    const data = await res.json()
+    version = data.version as string
+  }
+} catch (error) {
+  console.warn('Failed to fetch version:', error)
+  // 如果获取版本失败，不影响组件正常渲染
+}
 
 const raw = [
   {
