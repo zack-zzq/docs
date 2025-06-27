@@ -51,7 +51,7 @@ Thunder Browser：Currently only supports mobile phones (Android, iOS)
 
 That is, the mobile phone number, email, and username used for login (there is a probability that you cannot log in, you need to try)
 
-- You need to bring the `+86` area code, for example +8613722223333 fill in like this
+- You need to bring the `+86` area code, for example +86 13722223333 fill in like this
 
 <br/>
 
@@ -113,7 +113,7 @@ Or use the proxy function in this program to transfer.
 ### **Login Type**
 
 1. When selecting User, you only need to fill in the username and password
-   - User You need to bring the `+86` area code, for example +8613722223333 fill in like this
+   - User You need to bring the `+86` area code, for example +86 13722223333 fill in like this
 
 
 2. **RefreshToken**: Just fill in RefreshToken when selecting RefreshToken
@@ -417,7 +417,7 @@ flowchart TB
 
 Mobile phone number, email, username, and password used to log in
 
-- When filling in the mobile phone number, please bring the `+86` area code, for example `+8613822334455`
+- When filling in the mobile phone number, please bring the `+86` area code, for example `+86 13822334455`
 
 <br/>
 
@@ -503,7 +503,7 @@ flowchart TB
 
 Mobile phone number, email, username, and password used to log in
 
-- When filling in the mobile phone number, please bring the `+86` area code, for example `+8613822334455`
+- When filling in the mobile phone number, please bring the `+86` area code, for example `+86 13822334455`
 
 <br/>
 

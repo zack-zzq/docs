@@ -50,7 +50,7 @@ A file list program that supports multiple storage, and supports web browsing an
 - [x] [Quark/TV](https://pan.quark.cn/)
 - [x] [Thunder / X Browser](../guide/drivers/thunder.md)
 - [x] [Lanzou](https://www.lanzou.com/)、[NewLanzou](https://www.ilanzou.com)
-- [x] [Feiji Cloud](https://feijipan.com/)
+- [x] [Feiji Cloud](https://www.feijipan.com/)
 - [x] [Aliyundrive share](https://www.alipan.com/)
 - [x] [Google photo](https://photos.google.com/)
 - [x] [Mega.nz](https://mega.nz)

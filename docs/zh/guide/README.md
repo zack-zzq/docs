@@ -12,12 +12,6 @@ category:
 
 一个支持多种存储，支持网页浏览和 WebDAV 的文件列表程序，由 gin 和 Solidjs 驱动。
 
-<BusinessModal />
-
-<script setup lang="ts">
-import BusinessModal from "@BusinessModal";
-</script>
-
 :::warning
 新版本（V3 及更高版本）与 V2 不兼容，因此如果您从 V2 升级，我们建议您完全重新安装 Alist。
 :::
@@ -54,7 +48,7 @@ import BusinessModal from "@BusinessModal";
 - [x] [夸克网盘/TV](https://pan.quark.cn)
 - [x] [迅雷网盘 / X / 浏览器](../guide/drivers/thunder.md)
 - [x] [蓝奏云](https://www.lanzou.com/)、[蓝奏云优享版](https://www.ilanzou.com)
-- [x] [小飞机网盘](https://feijipan.com/)
+- [x] [小飞机网盘](https://www.feijipan.com/)
 - [x] [阿里云盘分享](https://www.alipan.com/)
 - [x] [谷歌相册](https://photos.google.com/)
 - [x] [Mega.nz](https://mega.nz)
