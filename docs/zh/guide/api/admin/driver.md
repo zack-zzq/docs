@@ -88,7 +88,6 @@ GET /api/admin/driver/names
         "Local",
         "139Yun",
         "BaiduNetdisk",
-        "Quqi",
         "115 Cloud",
         "FeijiPan",
         "S3",

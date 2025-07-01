@@ -74,6 +74,13 @@ flowchart TB
 
 [点击这里](https://openapi.baidu.com/oauth/2.0/authorize?response_type=code&client_id=hq9yQ9w9kR4YHj1kyYafLygVocobh7Sf&redirect_uri=https://alistgo.com/tool/baidu/callback&scope=basic,netdisk&qrcode=1) 来获取刷新令牌。
 
+## **更新存储**
+百度网盘的客户端 ID 和密钥已经更新。您只需要在 AList 存储设置中更新，即可恢复正常挂载和使用百度网盘。具体更新方法请参考下方图片。
+- 客户端ID: hq9yQ9w9kR4YHj1kyYafLygVocobh7Sf
+
+- 客户端密钥: YH2VpZcFJHYNnV6vLfHQXDBhcE7ZChyE
+![alist](/img/drivers/baidu/baidu_new_getToken.png)
+
 
 
 ## **根文件夹ID**

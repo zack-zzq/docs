@@ -31,7 +31,12 @@ Or use the proxy function in this program to transfer.
 ## **Refresh token**
 [Click here](https://openapi.baidu.com/oauth/2.0/authorize?response_type=code&client_id=hq9yQ9w9kR4YHj1kyYafLygVocobh7Sf&redirect_uri=https://alistgo.com/tool/baidu/callback&scope=basic,netdisk&qrcode=1) to get the refresh token.
 
+## **Storage Update**
+The Baidu Netdisk client ID and secret have been updated. You only need to update these in your AList storage settings to restore normal mounting and usage of Baidu Netdisk. Please refer to the image below for detailed instructions.
+- Client ID: hq9yQ9w9kR4YHj1kyYafLygVocobh7Sf
 
+- Client Secret: YH2VpZcFJHYNnV6vLfHQXDBhcE7ZChyE
+![alist](/img/drivers/baidu/baidu_new_getToken.png)
 
 ## **Root folder path**
 The root foler to mount, defaults to `/`
@@ -94,7 +99,7 @@ The root foler to mount, defaults to `/`
 
 It will only be useful if a member finishes modifying **`"User-Agent"`** (choose official and 302)
 
-If you don’t change **`"User-Agent"`**, you can enable ==Web Agent==, the disadvantage is that you need to build an Alist machine for transfer, that is to say, you need a large broadband to help you transfer
+If you don't change **`"User-Agent"`**, you can enable ==Web Agent==, the disadvantage is that you need to build an Alist machine for transfer, that is to say, you need a large broadband to help you transfer
 
 <div>
     <p style="text-align: center;"><span>Tutorial on how to modify UA in web page 302 mode: <br/></span>On the left is<span style="color:red;font-weight: bold;font-size: xx-large;">『Official』</span>API，On the right is the<span style="color:blue;font-weight: bold;font-size: xx-large;">『Crack video』</span>API</p>
@@ -115,7 +120,7 @@ If you don’t change **`"User-Agent"`**, you can enable ==Web Agent==, the disa
 
 - The advantage of using a browser plug-in to modify is that it can be played directly online, of course, downloading is also possible.
 
-Example <Badge text="1" type="info" vertical="middle" />: If you really don’t know it, you can take a look at an example on the web page: **https://www.bilibili.com/video/BV1UA4y1X7J8**
+Example <Badge text="1" type="info" vertical="middle" />: If you really don't know it, you can take a look at an example on the web page: **https://www.bilibili.com/video/BV1UA4y1X7J8**
 
 Example <Badge text="2" type="info" vertical="middle" />: Another plugin method covering 360, Chrome, Edge: **https://youtu.be/PP6b0WSzYMc**
 

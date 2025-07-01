@@ -70,7 +70,6 @@ A file list program that supports multiple storage, and supports web browsing an
 - [x] [Tencent weiyun](https://www.weiyun.com/)
 - [ ] [vtencent](https://app.v.tencent.com/)
 - [x] [ChaoxingGroupCloud](../guide/drivers/chaoxing.md)
-- [x] [Quqi Cloud](https://quqi.com)
 - [x] [163 Music Drive](../guide/drivers/163music.md)
 - [x] [halalcloud](../guide/drivers/halalcloud.md)
 - [x] [LenovoNasShare](https://pc.lenovo.com.cn)
