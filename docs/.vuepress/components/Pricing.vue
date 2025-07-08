@@ -34,7 +34,7 @@ let data = {
     },
     {
       title: 'AList Desktop',
-      price: '＄9.99',
+      price: '￥39.99',
       features: [
         'All Open Source features',
         'Use a nice UI to manage the Alist program instead of the command line, and easily view logs',
@@ -47,8 +47,8 @@ let data = {
       ],
       btns: [
         {
-          text: 'Download',
-          link: 'https://github.com/alist-org/desktop-release/releases',
+          text: 'Buy now',
+          link: 'https://desktop.alistgo.com/zh',
         }
         // ,{
         //   text: 'Buy',
@@ -118,8 +118,8 @@ if (location.pathname.startsWith("/zh/")) {
         ],
         btns: [
           {
-            text: '下载',
-            link: 'https://github.com/alist-org/desktop-release/releases',
+            text: '现在购买',
+            link: 'https://desktop.alistgo.com/zh',
           }
           // ,{
           //   text: '购买',
