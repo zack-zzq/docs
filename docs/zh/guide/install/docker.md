@@ -59,7 +59,7 @@ services:
 
 稳定版：`alist666/alist:latest` 或指定本版，如 `alist666/alist:v3.41.0` `alist666/alist:v3.40.0`
 
-最新镜像版本，请参阅 https://hub.docker.com/r/alist666/alist/tags
+最新镜像版本，请参阅 https://hub.docker.com/r/xhofe/alist/tags
 
 开发版：`alist666/alist:beta`
 
