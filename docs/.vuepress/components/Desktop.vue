@@ -7,7 +7,7 @@ const proxy = "https://ghfast.top/"
 let version: string | undefined
 
 try {
-  const res = await fetch(`https://ad-api.nn.ci/v0/app/latest`)
+  const res = await fetch(`https://dapi.alistgo.com/v0/version/latest`)
   if (res.ok) {
     const data = await res.json()
     version = data.version as string
@@ -21,27 +21,27 @@ const raw = [
   {
     key: "mac_arm64",
     label: "MacOS (Apple Silicon)",
-    url: `https://alistgo.com/download/Alist/alist-desktop_aarch64.dmg`,
+    url: `https://alistgo.com/download/Alist/desktop-v${version}/alist-desktop_${version}_aarch64.dmg`,
   },
   {
     key: "mac_x64",
     label: "MacOS (Intel)",
-    url: `https://alistgo.com/download/Alist/alist-desktop_x64.dmg`,
+    url: `https://alistgo.com/download/Alist/desktop-v${version}/alist-desktop_${version}_x64.dmg`,
   },
   {
     key: "win_x64",
     label: "Windows (X64)",
-    url: `https://alistgo.com/download/Alist/alist-desktop_x64-setup.exe`,
+    url: `https://alistgo.com/download/Alist/desktop-v${version}/alist-desktop_${version}_x64-setup.exe`,
   },
   {
     key: "win_arm64",
     label: "Windows (ARM64)",
-    url: `https://alistgo.com/download/Alist/alist-desktop_arm64-setup.exe`,
+    url: `https://alistgo.com/download/Alist/desktop-v${version}/alist-desktop_${version}_arm64-setup.exe`,
   },
   {
     key: "linux",
     label: "Linux",
-    url: `https://alistgo.com/download/Alist/alist-desktop_amd64.deb`,
+    url: `https://alistgo.com/download/Alist/desktop-v${version}/alist-desktop_${version}_amd64.deb`,
   },
 ] as const
 

@@ -52,6 +52,13 @@ curl -fsSL "https://alistgo.com/beta.sh" | bash -s update
 curl -fsSL "https://alistgo.com/beta.sh" | bash -s uninstall
 ```
 
+@tab Windows
+**Install**
+```bash
+iwr -useb "https://alistgo.com/alist-manager.ps1" | iex
+```
+![alist-windows-install](/img/guide/alist-windows-install.png)
+
 :::
 
 ### **Custom path**
