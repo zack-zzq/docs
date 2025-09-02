@@ -64,14 +64,23 @@ function Get-LatestVersion {
     }
 }
 
+# -----------------------------
+# 获取真实物理网卡 IPv4
 function Get-LocalIP {
-    $ip = (Get-NetIPAddress -AddressFamily IPv4 |
-           Where-Object {$_.IPAddress -ne "127.0.0.1" -and $_.IPAddress -notlike "169.*"} |
-           Select-Object -First 1 -ExpandProperty IPAddress)
+    $realNICs = Get-NetIPAddress -AddressFamily IPv4 | Where-Object {
+        $_.IPAddress -ne "127.0.0.1" -and
+        $_.IPAddress -notlike "169.*" -and
+        $_.InterfaceAlias -notmatch "vEthernet|Virtual|VMware|Loopback|WSL|Hyper-V" -and
+        $_.ValidLifetime -ne "Infinite"
+    }
+
+    $ip = $realNICs | Sort-Object InterfaceMetric | Select-Object -First 1 -ExpandProperty IPAddress
+
     if (-not $ip) { $ip = "127.0.0.1" }
     return $ip
 }
 
+# -----------------------------
 function Install-NSSM {
     if (-Not (Test-Path $nssmPath)) {
         $tmpZip = "$env:TEMP\nssm.zip"
