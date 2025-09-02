@@ -83,7 +83,7 @@ export default defineUserConfig({
   bundler: viteBundler({
     viteOptions: {
       ssr: {
-        noExternal: ["naive-ui"],
+        noExternal: ["naive-ui", "vueuc"],
       },
     },
   }),
