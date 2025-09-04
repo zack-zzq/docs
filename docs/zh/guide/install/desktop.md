@@ -45,19 +45,7 @@ import Desktop from "@Desktop";
 
 ![](/img/desktop/new_get_key.png)
 
-激活时 **`不需要`** 勾选 :black_square_button: **Lemon Squeezey**
 
-![](/img/desktop/logIn_mbd.png)
-
-@tab Lemon Squeezy
-<!-- ：**https://app.lemonsqueezy.com/my-orders** -->
-Lemon Squeezy
-
-![](/img/desktop/key_lemonsqueezy.png)
-
-激活时 **`需要`** 勾选 :white_check_mark: **Lemon Squeezey**
-
-![](/img/desktop/login_lemonsqueezy.png)
 
 :::
 
@@ -76,12 +64,6 @@ Lemon Squeezy
 <!-- - **https://ad.nn.ci/zh/usage** -->
 
 ![](/img/desktop/mianbaoduo.png)
-
-@tab Lemon Squeezy
-<!-- 在 **https://app.lemonsqueezy.com/my-orders** 登录购买[ :lemon:Lemon Squeezy](https://store.nn.ci/buy/51dca247-20df-4991-8104-54ca534bcc82) 时的邮箱，然后 -->
-按照下图教程操作
-
-![](/img/desktop/lemonsqueezy.png)
 
 :::
 

@@ -46,20 +46,6 @@ MBD purchases can be viewed in a variety of different channels
 
 ![](/img/desktop/key_mbd.png)
 
-Activation **`Not Required`** Select :black_square_button:   **Lemon Squeezey**
-
-![](/img/desktop/logIn_mbd.png)
-
-@tab Lemon Squeezy
-<!-- ：**https://app.lemonsqueezy.com/my-orders** -->
-Lemon Squeezy
-
-![](/img/desktop/key_lemonsqueezy.png)
-
-Activation **`required`** Select :white_check_mark: **Lemon Squeezey**
-
-![](/img/desktop/login_lemonsqueezy.png)
-
 :::
 
 <br/>
@@ -77,12 +63,5 @@ Enter the `key` purchased on mbd to deactivate the device that is no longer in u
 <!-- - **https://ad.nn.ci/zh/usage** -->
 
 ![](/img/desktop/mianbaoduo.png)
-
-@tab Lemon Squeezy
-<!-- Log in to **https://app.lemonsqueezy.com/my-orders**
-log in with the email address you used when you purchased [:lemon:Lemon Squeezy](https://store.nn.ci/buy/51dca247-20df-4991-8104-54ca534bcc82) and  -->
-follow the instructions below.
-
-![](/img/desktop/lemonsqueezy.png)
 
 :::

@@ -1,32 +1,16 @@
 <script setup lang="ts">
-import { ref, onMounted } from "vue"
+import { inject } from "vue"
 
-// 全局版本状态，避免重复请求
-const globalVersionState = {
-  version: ref<string>(""),
-  loading: ref<boolean>(true),
-  promise: null as Promise<void> | null
+const VERSION_KEY = "alist-version"
+const VERSION_LOADING_KEY = "alist-version-loading"
+
+// 从Provider获取全局状态
+const version = inject<ReturnType<typeof ref<string>>>(VERSION_KEY)
+const loading = inject<ReturnType<typeof ref<boolean>>>(VERSION_LOADING_KEY)
+
+if (!version || !loading) {
+  throw new Error("DownloadLink must be used within VersionProvider")
 }
-
-// 如果还没有请求过，创建一个全局请求
-if (!globalVersionState.promise) {
-  globalVersionState.promise = (async () => {
-    try {
-      const res = await fetch("https://dapi.alistgo.com/v0/version/latest")
-      const data = await res.json()
-      globalVersionState.version.value = data.version
-    } catch (err) {
-      console.error("fetch version failed", err)
-      // 失败时设置默认版本，避免无限等待
-      globalVersionState.version.value = "3.52.0"
-    } finally {
-      globalVersionState.loading.value = false
-    }
-  })()
-}
-
-const version = globalVersionState.version
-const loading = globalVersionState.loading
 
 const props = defineProps<{
   // 服务端下载使用：传入文件名后缀，例如 "windows-arm64.zip"
@@ -38,10 +22,7 @@ const props = defineProps<{
   tpl?: string
 }>()
 
-onMounted(async () => {
-  // 等待全局版本加载完成
-  await globalVersionState.promise
-})
+// 不再需要onMounted钩子，因为我们在组件初始化时就处理了版本获取
 
 function buildUrl() {
   const v = version.value
@@ -51,7 +32,7 @@ function buildUrl() {
     // 桌面版下载地址：
     // https://alistgo.com/download/Alist/desktop-v${version}/${tpl}
     // 例如：alist-desktop_{ver}_aarch64.dmg
-    const filenameFromTpl = (props.tpl ?? "alist-desktop_{ver}_aarch64.dmg").replaceAll("{ver}", v)
+    const filenameFromTpl = (props.tpl ?? "alist-desktop_{ver}_aarch64.dmg").replaceAll("{ver}", v || "3.52.0")
     return `https://alistgo.com/download/Alist/desktop-v${v}/${filenameFromTpl}`
   }
 

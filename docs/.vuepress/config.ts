@@ -141,6 +141,7 @@ export default defineUserConfig({
     "@Pricing": path.resolve(__dirname, "./components/Pricing.vue"),
     "@Desktop": path.resolve(__dirname, "./components/Desktop.vue"),
     "@DownloadLink": path.resolve(__dirname, "./components/DownloadLink.vue"),
+    "@VersionProvider": path.resolve(__dirname, "./components/VersionProvider.vue"),
     "@Changelog": path.resolve(__dirname, "./components/changelog/index.vue"),
     "@Api": path.resolve(__dirname, "./components/api/index.ts"),
     "@Dropbox/Request": path.resolve(
