@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { NButtonGroup, NImage, NSpace, NButton, NDropdown } from "naive-ui"
+import { NButtonGroup, NImage, NSpace, NButton, NDropdown, NTooltip, NPopover } from "naive-ui"
 import { computed, ref } from "vue"
 // import { api } from "./api";
 
@@ -62,6 +62,8 @@ console.log(plat.value)
 let text = {
   down: "Download",
   website: "Website",
+  service: "Contact customer service if you have any questions",
+  qrTip: "Scan QR code to contact customer service"
 }
 
 const fullPlat = computed(() => {
@@ -81,6 +83,8 @@ if (location.pathname.startsWith("/zh/")) {
   text = {
     down: "下载",
     website: "官网",
+    service: "如有问题联系小客服",
+    qrTip: "扫码联系客服"
   }
 }
 
@@ -120,7 +124,26 @@ function openWebsite() {
         }}</NButton>
       </NButtonGroup></NSpace
     >
+    
     <NImage src="/img/guide/desktop.png"></NImage>
+    
+    <div class="customer-service">
+      <NPopover trigger="hover" placement="top">
+        <template #trigger>
+          <span class="service-link">{{ text.service }}</span>
+        </template>
+        <template #default>
+          <div class="qr-code-container">
+            <img 
+              src="https://oss.hutool.cn/000000-hutool/upload/alist/qi%20ye.jpg" 
+              :alt="text.qrTip" 
+              class="qr-code"
+            />
+            <p class="qr-tip">{{ text.qrTip }}</p>
+          </div>
+        </template>
+      </NPopover>
+    </div>
   </NSpace>
 </template>
 
@@ -129,5 +152,40 @@ function openWebsite() {
   transform: scale(125%);
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.customer-service {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.service-link {
+  color: #1890ff;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 22px;
+  transition: color 0.3s;
+}
+
+.service-link:hover {
+  color: #40a9ff;
+}
+
+.qr-code-container {
+  text-align: center;
+  padding: 16px;
+}
+
+.qr-code {
+  width: 250px;
+  height: 250px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.qr-tip {
+  margin-top: 8px;
+  color: gray;
+  font-size: 18px;
 }
 </style>
