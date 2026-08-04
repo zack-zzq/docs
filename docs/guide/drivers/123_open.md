@@ -26,6 +26,14 @@ Please visit [123YunPan](https://www.123pan.com/) to purchase the "VIP" service 
 
 ::::: tabs#123 Open
 
+@tab Get Refresh Token
+
+## Get Refresh Token
+
+Use 123Pan's official third-party authorization application to refresh the token automatically. No personal developer application is required.
+
+---
+
 @tab Integration Guide
 
 ## Integration Guide

@@ -26,6 +26,14 @@ author: 千石(okatu-loli)
 
 ::::: tabs#123 Open
 
+@tab 获取刷新Token
+
+## 获取刷新Token
+
+调用 123Pan 官方第三方授权应用，自动刷新 Token，无需申请个人开发者。
+
+---
+
 @tab 接入说明
 
 ## 接入说明
