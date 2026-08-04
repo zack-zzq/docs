@@ -18,12 +18,6 @@ author: 千石(okatu-loli)
 
 支持文件浏览、上传、预览、下载、管理等功能，并由 Alist 自动维护 token 生命周期。
 
-::: warning 需开通付费功能
-文件列表等基础功能可免费使用，但**直链相关功能（如预览、下载）依赖于付费的开放平台权限**。
-
-请前往 [123云盘](https://www.123pan.com/) 购买「VIP」服务，并在 [123开放平台](https://www.123pan.com/developer) 创建应用以获取接口凭证（Client ID 和 Client Key）。
-:::
-
 ::::: tabs#123 Open
 
 @tab 获取刷新Token
