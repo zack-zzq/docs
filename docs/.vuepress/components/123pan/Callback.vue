@@ -4,6 +4,8 @@ import { NAlert, NInput, NSpace, NSpin } from "naive-ui"
 import { api } from "../api"
 
 interface TokenData {
+  access_token?: string
+  accessToken?: string
   refresh_token?: string
   refreshToken?: string
 }
@@ -23,6 +25,15 @@ const oauthErrorDescription = url.searchParams.get("error_description")
 const token = ref<TokenResponse>()
 const requestError = ref("")
 const loading = ref(false)
+
+const accessToken = computed(
+  () =>
+    token.value?.access_token ||
+    token.value?.accessToken ||
+    token.value?.data?.access_token ||
+    token.value?.data?.accessToken ||
+    ""
+)
 
 const refreshToken = computed(
   () =>
@@ -79,19 +90,34 @@ if (code && !oauthError) {
     <NAlert v-if="requestError" title="Error" type="error">
       {{ requestError }}
     </NAlert>
-    <NSpace vertical>
-      <b>refresh_token:</b>
-      <NSpin v-if="loading" />
-      <NInput
-        v-else-if="refreshToken"
-        type="textarea"
-        autosize
-        readonly
-        :value="refreshToken"
-      />
-      <NAlert v-else-if="token && !requestError" title="Error" type="error">
-        The token response does not contain a refresh_token.
-      </NAlert>
-    </NSpace>
+    <NSpin v-if="loading" />
+    <template v-else>
+      <NSpace vertical>
+        <b>access_token:</b>
+        <NInput
+          v-if="accessToken"
+          type="textarea"
+          autosize
+          readonly
+          :value="accessToken"
+        />
+        <NAlert v-else-if="token && !requestError" title="Error" type="error">
+          The token response does not contain an access_token.
+        </NAlert>
+      </NSpace>
+      <NSpace vertical>
+        <b>refresh_token:</b>
+        <NInput
+          v-if="refreshToken"
+          type="textarea"
+          autosize
+          readonly
+          :value="refreshToken"
+        />
+        <NAlert v-else-if="token && !requestError" title="Error" type="error">
+          The token response does not contain a refresh_token.
+        </NAlert>
+      </NSpace>
+    </template>
   </NSpace>
 </template>
