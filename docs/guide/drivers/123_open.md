@@ -38,12 +38,7 @@ Please visit [123YunPan](https://www.123pan.com/) to purchase the "VIP" service 
 
 Use 123Pan's official third-party authorization application to refresh the token automatically. No personal developer application is required.
 
-<button
-  style="outline:none;padding:12px;background:#70c6be;border:none;border-radius:8px;cursor:pointer;font-size:20px;"
-  @click="go123PanAuth"
->
-  Get Refresh Token
-</button>
+<button style="outline:none;padding:12px;background:#70c6be;border:none;border-radius:8px;cursor:pointer;font-size:20px;" @click="go123PanAuth">Get Refresh Token</button>
 
 ---
 

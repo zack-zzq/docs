@@ -32,12 +32,7 @@ const go123PanAuth = () => {
 
 调用 123Pan 官方第三方授权应用，自动刷新 Token，无需申请个人开发者。
 
-<button
-  style="outline:none;padding:12px;background:#70c6be;border:none;border-radius:8px;cursor:pointer;font-size:20px;"
-  @click="go123PanAuth"
->
-  获取刷新 Token
-</button>
+<button style="outline:none;padding:12px;background:#70c6be;border:none;border-radius:8px;cursor:pointer;font-size:20px;" @click="go123PanAuth">获取刷新 Token</button>
 
 ---
 
