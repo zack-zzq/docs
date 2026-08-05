@@ -26,6 +26,8 @@ author: 千石(okatu-loli)
 
 调用 123Pan 官方第三方授权应用，自动刷新 Token，无需申请个人开发者。
 
+<a href="https://yun.123pan.com/auth?client_id=zpcup2ci1kmy62s8mkbc363e32z2v9l5&amp;redirect_uri=https%3A%2F%2Falistgo.com%2Ftool%2F123pan%2Fcallback&amp;scope=user:base,file:all:read,file:all:write&amp;state=alist" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.65rem 1.25rem; color: #fff; font-weight: 600; line-height: 1.5; text-decoration: none; background: #18a058; border-radius: 4px;">获取刷新 Token</a>
+
 ---
 
 @tab 接入说明
