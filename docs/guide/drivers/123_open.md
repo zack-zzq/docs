@@ -32,7 +32,18 @@ Please visit [123YunPan](https://www.123pan.com/) to purchase the "VIP" service 
 
 Use 123Pan's official third-party authorization application to refresh the token automatically. No personal developer application is required.
 
-<a href="https://yun.123pan.com/auth?client_id=zpcup2ci1kmy62s8mkbc363e32z2v9l5&amp;redirect_uri=https%3A%2F%2Falistgo.com%2Ftool%2F123pan%2Fcallback&amp;scope=user:base,file:all:read,file:all:write&amp;state=alist" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.65rem 1.25rem; color: #fff; font-weight: 600; line-height: 1.5; text-decoration: none; background: #18a058; border-radius: 4px;">Get Refresh Token</a>
+<script setup lang="ts">
+const go123PanAuth = () => {
+  window.location.href = "https://yun.123pan.com/auth?client_id=zpcup2ci1kmy62s8mkbc363e32z2v9l5&redirect_uri=https%3A%2F%2Falistgo.com%2Ftool%2F123pan%2Fcallback&scope=user:base,file:all:read,file:all:write&state=alist";
+};
+</script>
+
+<button
+  style="outline:none;padding:12px;background:#70c6be;border:none;border-radius:8px;cursor:pointer;font-size:20px;"
+  @click="go123PanAuth"
+>
+  Get Refresh Token
+</button>
 
 ---
 
