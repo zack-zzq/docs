@@ -6,11 +6,11 @@ const pageData = usePageData()
 const isChinese = computed(() => {
   return pageData.value.path.startsWith("/zh/")
 })
-const backgroundImage = computed(() => isChinese.value ? '/img/ss/new_bgc_zh.png' : '/img/ss/new_bgc_en.png')
+const backgroundImage = computed(() => isChinese.value ? '/img/ss/123-top-zn.jpg' : '/img/ss/123-top-en.jpg')
 const jumpUrl = computed(() =>
   isChinese.value
-    ? 'https://zh.okaapps.com/vidhub-alist'
-    : 'https://okaapps.com/vidhub-alist'
+    ? 'https://yun.123pan.cn/member?tabKey=1&productKey=vip&source_page=vip_button'
+    : 'https://yun.123pan.cn/member?tabKey=1&productKey=vip&source_page=vip_button'
 )
 
 console.log('当前图片:', backgroundImage.value)
@@ -34,11 +34,11 @@ const handleAdClick = async () => {
 
 <template>
   <div class="ads-container">
-    <!-- <div class="vidhub-new-bgc">
+    <div class="vidhub-new-bgc">
       <a :href="jumpUrl" target="_blank" rel="noopener" @click="handleAdClick">
         <img :src="backgroundImage" :alt="isChinese ? 'VidHub 背景' : 'VidHub Background'" />
       </a>
-    </div> -->
+    </div>
   </div>
 </template>
 

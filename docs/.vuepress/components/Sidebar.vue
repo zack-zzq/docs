@@ -2,17 +2,16 @@
   <Sidebar>
     <template #top>
       <div class="ss">
-        <!-- <div class="sidebar-ad-placeholder" >
-          <a href="https://e.tb.cn/h.SIXPWhPqkQZSEGW?tk=LGSzfiLOCB1" target="_blank" @click="handleAdClick('alist-115')">
-            <img :src="adImage" alt="Hutool" style="max-width: 80%; height: auto; margin-left: 20px;" />
-          </a>
-        </div> -->
         <div class="sidebar-ad-placeholder" style="margin-top: 25px;">
           <a href="https://doc.hutool.cn/" target="_blank" @click="handleAdClick('alist-hutool')">
             <img src="/img/ss/hutool.pic.jpg" alt="Hutool" style="max-width: 80%; height: auto; margin-left: 20px;" />
           </a>
         </div>
-         
+        <div class="sidebar-ad-placeholder" style="margin-top: 25px;">
+          <a href="https://yun.123pan.cn/member?tabKey=1&productKey=vip&source_page=vip_button" target="_blank" @click="handleAdClick('alist-123pan')">
+            <img src="/img/ss/123-left.jpg" alt="123pan" style="max-width: 80%; height: auto; margin-left: 20px;" />
+          </a>
+        </div>
         <div class="mingdao" v-if="showMingdao">
           <a href="https://www.mingdao.com?s=utm_51=utm_source=alist&utm_medium=banner&utm_campaign=%E5%93%81%E7%89%8C%E6%8E%A8%E5%B9%BF&utm_content=IT%E8%B5%8B%E8%83%BD%E4%B8%9A%E5%8A%A1"
             target="_blank"><img src="/img/ss/mingdao.png" alt="" /></a>
