@@ -32,7 +32,7 @@ Please visit [123YunPan](https://www.123pan.com/) to purchase the "VIP" service 
 
 Use 123Pan's official third-party authorization application to refresh the token automatically. No personal developer application is required.
 
-Go to：**https://alistgo.com/tool/123pan/request**
+Go to: [**Get Refresh Token**](https://alistgo.com/tool/123pan/request?cachebust=20260809)
 
 ---
 

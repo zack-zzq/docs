@@ -105,7 +105,7 @@ typeof fetch !== "undefined" && getLimit()
 
 ## **refresh token**
 
-Go to：**https://alistgo.com/tool/aliyundrive/request**
+Go to: [**Get Refresh Token**](https://alistgo.com/tool/aliyundrive/request?cachebust=20260809)
 
 #### **Get example graph**
 
