@@ -156,6 +156,10 @@ gtag('config', 'G-9QM0DWGFXG');`,
       __dirname,
       "./components/123pan/Callback.vue"
     ),
+    "@123Pan/Request": path.resolve(
+      __dirname,
+      "./components/123pan/Request.vue"
+    ),
     "@Wopan/Token": path.resolve(__dirname, "./components/wopan/Token.vue"),
     "@Pricing": path.resolve(__dirname, "./components/Pricing.vue"),
     "@Desktop": path.resolve(__dirname, "./components/Desktop.vue"),

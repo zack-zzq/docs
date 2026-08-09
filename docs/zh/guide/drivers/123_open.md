@@ -12,12 +12,6 @@ star: true
 author: 千石(okatu-loli)
 ---
 
-<script setup lang="ts">
-const go123PanAuth = () => {
-  window.location.href = "https://yun.123pan.com/auth?client_id=zpcup2ci1kmy62s8mkbc363e32z2v9l5&redirect_uri=https%3A%2F%2Falistgo.com%2Ftool%2F123pan%2Fcallback&scope=user:base,file:all:read,file:all:write&state=alist";
-};
-</script>
-
 # 123 Open（开放平台）
 
 `123 Open` 是 123云盘推出的开放平台接口，可通过密钥鉴权的方式在 Alist 中实现挂载访问。
@@ -32,7 +26,7 @@ const go123PanAuth = () => {
 
 调用 123Pan 官方第三方授权应用，自动刷新 Token，无需申请个人开发者。
 
-<button style="outline:none;padding:12px;background:#70c6be;border:none;border-radius:8px;cursor:pointer;font-size:20px;" @click="go123PanAuth">获取刷新 Token</button>
+前往：[**获取刷新 Token**](/zh/tool/123pan/request)
 
 ---
 
