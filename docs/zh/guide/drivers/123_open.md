@@ -26,7 +26,7 @@ author: 千石(okatu-loli)
 
 调用 123Pan 官方第三方授权应用，自动刷新 Token，无需申请个人开发者。
 
-前往：[**获取刷新 Token**](/zh/tool/123pan/request)
+前往：**https://alistgo.com/tool/123pan/request**
 
 ---
 
