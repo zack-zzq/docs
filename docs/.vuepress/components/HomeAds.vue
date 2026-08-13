@@ -23,7 +23,7 @@ const handleAdClick = async () => {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        name: "alist-vidhub"
+        name: "alist-123pan"
       })
     });
   } catch (error) {
