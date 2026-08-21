@@ -21,6 +21,12 @@ headerDepth: 5
 
 # 115 Open
 
+::: danger
+
+115 Cloud has closed its Open API. New integrations can no longer use the 115 Open driver. To continue using 115 Cloud, please use [**115 Cloud / Share**](115.md).
+
+:::
+
 ::: tip
 
 Developed using the official [**115 Open Platform API**](https://open.115.com)
